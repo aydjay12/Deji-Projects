@@ -327,7 +327,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 2em;
-                margin-bottom: 6em;
+                margin-bottom: 4em;
             }
 
             .photos img
@@ -608,9 +608,11 @@
                 .video{
                     margin-top: 2em;
                 }
+
                 .video_head{
                     margin-bottom: 1em;
                 }
+                
                 .article_head{
                     margin-top: 3em;
                     margin-bottom: 1em;
@@ -1011,6 +1013,9 @@
         </main>
     </body>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js" integrity="sha512-AWDq5V1aZW5392Wm63Y2qUKK5MuksXgQVx4YMx5LqLOk4Tnzu2aSNyd/Uqwil/kIm9pikPDk6B626B7H3vq1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
         var day1 = document.getElementById('day_1');
         var day2 = document.getElementById('day_2');
@@ -1029,6 +1034,8 @@
         var videoBox = document.getElementById('video-box');
 
         function day1ClickHandler(){
+            gsap.fromTo('#body_1', {opacity: 0, y:20}, {opacity:1, y:0, duration:1});
+            gsap.fromTo('#day_1', {opacity: 0, z:20}, {opacity:1, y:0, duration:1});
             body1.style.display = 'flex';
             body2.style.display = 'none';
             body3.style.display = 'none';
@@ -1041,6 +1048,8 @@
             day5.style.background = 'none';
         }
         function day2ClickHandler(){
+            gsap.fromTo('#body_2', {opacity: 0, y:20}, {opacity:1, y:0, duration:1});
+            gsap.fromTo('#day_2', {opacity: 0, z:20}, {opacity:1, y:0, duration:1});
             body2.style.display = 'flex';
             body1.style.display = 'none';
             body3.style.display = 'none';
@@ -1053,6 +1062,8 @@
             day5.style.background = 'none';
         }
         function day3ClickHandler(){
+            gsap.fromTo('#body_3', {opacity: 0, y:20}, {opacity:1, y:0, duration:1});
+            gsap.fromTo('#day_3', {opacity: 0, z:20}, {opacity:1, y:0, duration:1});
             body3.style.display = 'flex';
             body1.style.display = 'none';
             body2.style.display = 'none';
@@ -1065,6 +1076,8 @@
             day5.style.background = 'none';
         }
         function day4ClickHandler(){
+            gsap.fromTo('#body_4', {opacity: 0, y:20}, {opacity:1, y:0, duration:1});
+            gsap.fromTo('#day_4', {opacity: 0, z:20}, {opacity:1, y:0, duration:1});
             body4.style.display = 'flex';
             body1.style.display = 'none';
             body2.style.display = 'none';
@@ -1077,6 +1090,8 @@
             day5.style.background = 'none';
         }
         function day5ClickHandler(){
+            gsap.fromTo('#body_5', {opacity: 0, y:20}, {opacity:1, y:0, duration:1});
+            gsap.fromTo('#day_5', {opacity: 0, z:20}, {opacity:1, y:0, duration:1});
             body5.style.display = 'flex';
             body1.style.display = 'none';
             body2.style.display = 'none';
